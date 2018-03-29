@@ -1,0 +1,101 @@
+body{
+    background-color: white;
+}
+#wrapper{
+    background-color:black;
+    height:800px;
+    width:1600px;
+    margin: 0 auto;
+    border: solid gray 5px;
+    margin-top:60px;
+    background-size:cover;
+}
+#box{
+    background-color:grey;
+    border: solid darkgray 5px;
+    border-radius:10px;
+    height:200px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+#box-2{
+    background-color:grey;
+    border: solid darkgray 5px;
+    border-radius:10px;
+    height:200px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 240px;
+    opacity: .6;
+}
+.header{
+    color:white;
+}
+.header h1{
+    font-size:50px;
+    text-align:center;
+    margin-top:30px;
+}
+.header h2{
+    font-size:50px;
+    text-align:center;
+    color:gold;
+    position: relative;
+    bottom:52px;
+    right:2px;
+}
+#player1{
+    float:left;
+    margin: 20px;
+    margin-left:100px;
+    margin-bottom:50px;
+}
+#player2{
+    float:right;
+    margin: 20px;
+    margin-right:100px;
+    margin-bottom:50px;
+}
+.btn{
+    background-color:whitesmoke;
+    height:40px;
+    width:85px;
+    border-radius:10px;
+    display:inline-block;
+    text-align:center;
+    margin-left:10px;
+    padding-top:3px;
+}
+#top{
+    position:relative;
+    bottom:35px;
+    left:35px;
+}
+#bottom{
+    position:relative;
+    bottom:15px;
+    left:35px;
+}
+#player1turtle{
+    width: 350px;
+    height: 550px;
+    display: inline-block;
+    text-align:center;
+    /* background-size:cover; */
+    background-repeat:no-repeat;
+    position:relative;
+    bottom:200px;
+    left:200px;
+}
+#player2turtle{
+    width: 350px;
+    height: 550px;
+    display: inline-block;
+    margin-left: 800px;
+    text-align:center;
+    /* background-size:cover; */
+    position:relative;
+    bottom:200px;
+    background-repeat:no-repeat;
+}

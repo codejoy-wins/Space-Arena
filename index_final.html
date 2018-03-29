@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="resetter.css">
+    <link rel="stylesheet" href="arena.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#box-2').hide();
+            $(document).on('mouseover','.btn',function(){
+                var bg=$(this).attr('data-imageref');
+                $('#wrapper').css('background-image', "url('"+bg+"')");
+            })
+            $(document).on('hello','.btn',function(){
+                $('#box').hide();
+                $('#box-2').show();
+            })
+            $('#player1').on('change',function(){
+                if($(this).val()=="Leo"){
+                    $('#player1turtle').css('background-image', "url('leo.png')");
+                }
+                else if($(this).val()=="Raphael"){
+                    $('#player1turtle').css('background-image', "url('raphael.png')");
+                }
+                else if($(this).val()=="Mikey"){
+                    $('#player1turtle').css('background-image', "url('mikey.png')");
+                }
+                else if($(this).val()=="Donny"){
+                    $('#player1turtle').css('background-image', "url('donny.png')");
+                }
+            })
+            $('#player2').on('change',function(){
+                if($(this).val()=="Leo"){
+                    $('#player2turtle').css('background-image', "url('leo.png')");
+                }
+                else if($(this).val()=="Raphael"){
+                    $('#player2turtle').css('background-image', "url('raphael.png')");
+                }
+                else if($(this).val()=="Mikey"){
+                    $('#player2turtle').css('background-image', "url('mikey.png')");
+                }
+                else if($(this).val()=="Donny"){
+                    $('#player2turtle').css('background-image', "url('donny.png')");
+                }
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id ="box">
+            <div class ="header">
+                <h1>Select Arena</h1>
+                <h2>Select Arena</h2>
+            </div>
+            <div id="top">
+                    <div class="btn" data-imageref="beach.jpg">Beach</div>
+                    <div class="btn" data-imageref="earth.jpg">Planet</div>
+                    <div class="btn" data-imageref="dojo.jpg">dojo</div>
+        
+            </div>
+            <div id="bottom">
+                    <div class="btn" data-imageref="forest.jpg">Forest</div>
+                    <div class="btn" data-imageref="matrix.jpg">Matrix</div>
+                    <div class="btn" data-imageref="snow.jpg">Snow</div>
+        
+            </div>
+
+        </div>
+
+        <div id ="box-2">
+                <div class ="header">
+                    <h1>Select Players</h1>
+                    <h2>Select Players</h2>
+                </div>
+                <form>
+                    <select name = "player1" id="player1">
+                        <option>Leo</option>
+                        <option>Raphael</option>
+                        <option>Mikey</option>
+                        <option>Donny</option>
+                    </select>
+                    <select name = "player2" id="player2">
+                        <option>Leo</option>
+                        <option>Raphael</option>
+                        <option>Mikey</option>
+                        <option>Donny</option>
+                    </select>
+                </form>
+    
+            </div>
+        <div id="player1turtle"></div>
+        <div id="player2turtle"></div>
+
+    </div>
+</body>
+</html>
